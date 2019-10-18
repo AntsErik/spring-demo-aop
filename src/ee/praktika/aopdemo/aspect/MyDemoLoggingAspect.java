@@ -12,8 +12,8 @@ public class MyDemoLoggingAspect {
 
     //let us start with a before advice
 
-    @Before( "execution(* add*(..))" )
+    @Before( "execution(* ee.praktika.aopdemo.dao.*.*(..))" )
     public void beforeAddAccountAdvice(){
-        System.out.println( "\n======>>> Executing @Before advice on addAccount() in the AccountDAO class" );
+        System.out.println( "\n======>>> Executing @Before advice on addAccount() in the DAO package" );
     }
 }

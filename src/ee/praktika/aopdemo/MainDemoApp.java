@@ -22,9 +22,11 @@ public class MainDemoApp {
         //Call the "Business-model"
         Account myAccount = new Account();
         theAccountDAO.addAccount( myAccount, true );
+        theAccountDAO.doWork();
 
         //Call the Membership "Business-method"
         theMembershipDAO.addSimpleMember();
+        theMembershipDAO.goToSleep();
 
         //Close the context
         context.close();
