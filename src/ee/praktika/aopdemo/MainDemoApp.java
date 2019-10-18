@@ -21,7 +21,7 @@ public class MainDemoApp {
 
         //Call the "Business-model"
         Account myAccount = new Account();
-        theAccountDAO.addAccount( myAccount );
+        theAccountDAO.addAccount( myAccount, true );
 
         //Call the Membership "Business-method"
         theMembershipDAO.addSimpleMember();
